@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url("https://fonts.google.com/specimen/Outfit");
+
+    :root {
+      --WHITE: hsl(0, 0%, 100%);
+      --GRAY: hsl(212, 45%, 89%);
+      --GRAYISH_BLUE: hsl(220, 15%, 55%);
+      --DARK_BLUE: hsl(218, 44%, 22%);
+    }
+
+    html,
+    body {
+      font-family: "Outfit", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--GRAYISH_BLUE);
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+
+    .container {
+      background: var(--WHITE);
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .header-text {
+      margin: 10px;
+      font-size: 19px;
+      font-weight: 700;
+      padding: .5rem;
+      color: var(--DARK_BLUE)
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      color: (var(--GRAYISH_BLUE))
+    }
+
+    .attribution {
+      margin-top: -20px;
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <img src="images/image-qr-code.png" alt="qr-code" />
+      <div class="header-text">Improve your front-end skills by building projects</div>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">kielonl</a>.
+  </div>
+</body>
+
+</html>
